@@ -30,10 +30,9 @@ font-weight: 700;
 
 form
 {
-background-color: #dcdde1;
+
 padding: 40px 10px;
-box-shadow: 0 0 6px rgb(255, 255,255, 0.8);  
-border-radius: 15px;  
+ 
 }
 
 .form
@@ -126,6 +125,10 @@ cursor: pointer;
 border-radius: 10px;
 }
 
+button:hover
+{
+    background: linear-gradient(to right, #bdc3c7, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
 .warnig
 {
 width: 200px;
