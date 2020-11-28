@@ -1,6 +1,8 @@
 <?php
 require '../db/Conexion.php';
 
+$con= conexion();
+
 $message='';
 
 $conn=Conexion();

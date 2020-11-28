@@ -1,139 +1,130 @@
-*
-{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root
-{
---colortext: #000;
+:root {
+    --colortext: #000;
 }
 
-body
-{
-font-family: Arial, Helvetica, sans-serif;
-background: #bdc3c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-height: 600px;
-display: flex;
-justify-content: center;
-align-items: center;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h1
-{
-text-align: center;
-font-weight: 700;
+a {
+    text-decoration: none;
 }
 
-form
-{
-
-padding: 40px 10px;
- 
+h1 {
+    text-align: center;
+    font-weight: 700;
 }
 
-.form
-{
-width: 100%;
-margin: auto;
+form {
+    padding: 40px 10px;
 }
 
-form .text
-{
-position: relative;
-margin: 45px;
-
+.form {
+    width: 100%;
+    margin: auto;
 }
 
-input
-{
-background: none;    
-color: #a4b0be;
-font-size: 18px;
-padding: 5px 5px 5px 5px;
-display: block;
-width: 100%;
-border: none;
-border-bottom: 1px solid var(--colortext);
+form .text {
+    position: relative;
+    margin: 45px;
 }
 
-input:focus
-{
-outline: none;
-color: #000;
+input {
+    background: none;
+    color: #a4b0be;
+    font-size: 18px;
+    padding: 5px 5px 5px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colortext);
 }
 
-label
-{
-font-size: 18px;
-position: absolute;
-left: 5px;
-top: 10px;
-transition: 0.5s ease-in-out all;
-pointer-events: none;
+input:focus {
+    outline: none;
+    color: #000;
 }
 
-
-input:focus~label,input:valid~label
-{
-top: -14px;
-font-size: 12px;
+label {
+    font-size: 18px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
 }
 
-input:focus~.barra::before
-{
-width: 100%;
+input:focus~label,
+input:valid~label {
+    top: -14px;
+    font-size: 12px;
 }
 
-.barra
-{
-position: relative;
-display: block;
-width: 100%;
+input:focus~.barra::before {
+    width: 100%;
 }
 
-.barra::before
-{
-content: "";
-height: 2px;
-width: 0%;
-bottom: 0;
-position: absolute;    
-background: linear-gradient(to right, #2c3e50, #bdc3c7);
-transition: 0.3s ease widht;
-left: 0;
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
 }
 
-
-button
-{
-font-family: Arial, Helvetica, sans-serif;
-background: #bdc3c7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-border: none;
-display: block;
-width: 80%;
-margin: 10px auto;
-color: #000;
-height: 40px;
-font-size: 16px;
-cursor: pointer;
-border-radius: 10px;
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    transition: 0.3s ease widht;
+    left: 0;
 }
 
-button:hover
-{
-    background: linear-gradient(to right, #bdc3c7, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #000;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
 }
-.warnig
-{
-width: 200px;
-text-align: center;
-margin: auto;
-color: #c8d6e5;
-padding-top: 20px;
+
+button:hover {
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.warnig {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #c8d6e5;
+    padding-top: 20px;
 }

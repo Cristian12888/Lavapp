@@ -26,8 +26,8 @@
             </div>
             
 
-            <button type="submit">Iniciar sesion</button>
-            <button>Crear cuenta</button>
+        <button type="submit">Iniciar sesion</button>
+           <a href="choose_user.php"><button type="button" >Crear cuenta</button></a> 
            
     
         </div>
