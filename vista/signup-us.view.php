@@ -1,7 +1,4 @@
 
-<?php  require '../controlador/signup-us.php' ?>
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +6,7 @@
     <link rel="stylesheet" href="../vista/css/index.css">
 </head>
 <body>
-    <form action="Registro_us.php"  method="POST">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>"  method="POST">
         <div class="form">
     <title>Login</title>
             <h1>Lavapp</h1><br>
@@ -37,7 +34,7 @@
                 <label for="">Telefono</label>
             </div>
             <div class="text">
-                <input type="password" name="Contraseña"  required>
+                <input type="password" name="password"  required>
                 <span class="barra"></span>
                 <label for="">Contraseña</label>
             </div>

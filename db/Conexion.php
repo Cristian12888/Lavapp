@@ -1,28 +1,21 @@
 <?php
-/*class Conectar
-{
-    public static function conexion()
+
+
+    function conexion()
     {
+        $server = 'localhost';
+        $username = 'root';
+        $password = '';
+        $database = 'lavapp';
+        
         try {
-            $conexion = new mysqli("localhost", "root", "", "lavapp");
-            $conexion->query("SET NAMES 'utf8'");    
-        } catch (\Throwable $th) {
-            throw $th;
-        }
-
-        return $conexion;        
+          $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
+          return $conn;
+        } catch (PDOException $e) {
+          die('Connection Failed: ' . $e->getMessage());
+        }     
     }
-}*/
 
-$server = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'lavapp';
 
-try {
-  $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
-} catch (PDOException $e) {
-  die('Connection Failed: ' . $e->getMessage());
-}
 
 ?>
