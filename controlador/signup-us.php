@@ -1,6 +1,8 @@
 <?php
 require '../db/Conexion.php';
 
+$con= conexion();
+
 $message='';
 
 if(!empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['email']) && !empty($_POST['telefono']) && !empty($_POST['password']))
