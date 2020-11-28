@@ -6,6 +6,6 @@ if(isset($_SESSION))
 }
 else
 {
-    header("location: vista/login.php");
+    header("location: ../vista/login.php");
 }
 ?>

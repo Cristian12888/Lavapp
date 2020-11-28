@@ -1,7 +1,7 @@
 <?php
 
 
-    function conexion()
+  function conexion()
     {
         $server = 'localhost';
         $username = 'root';
@@ -16,6 +16,6 @@
         }     
     }
 
-
+  
 
 ?>
