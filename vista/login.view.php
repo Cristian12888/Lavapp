@@ -1,3 +1,4 @@
+<?php require 'header.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +28,7 @@
             
 
         <button type="submit">Iniciar sesion</button>
-           <a href="choose_user.php"><button type="button" >Crear cuenta</button></a> 
+           <a href="./choose_user.php"><button type="button" >Crear cuenta</button></a> 
            
     
         </div>
