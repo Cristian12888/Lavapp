@@ -1,0 +1,13 @@
+.choose_user {
+    border-radius: 50px;
+    border-color: crimson;
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    display: grid;
+}
+
+.choose_user h1{
+    justify-content: center;
+    display: grid;
+}

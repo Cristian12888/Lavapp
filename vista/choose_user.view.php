@@ -8,7 +8,7 @@ require 'header.php';
         </div>
         
         <div class="choose_user">
-            <h1>Prestador de servicio</h1>
+            <h1>Prestador <br>de servicio</h1>
         </div>
     </div>
 </body>
