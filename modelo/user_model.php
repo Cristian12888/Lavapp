@@ -2,9 +2,24 @@
  require '../db/Conexion.php';
 
  
-function findUser(array $user)
+function findUser()
 {
-        $sql= "select * from usuario where email=".$user['email'];
+session_start();
+
+    if (isset($_SESSION['user_id'])) {
+        $records = $conn->prepare('SELECT id, email, password FROM usuario WHERE id = :id');
+        $records->bindParam(':id', $_SESSION['user_id']);
+        $records->execute();
+        $results = $records->fetch(PDO::FETCH_ASSOC);
+    
+        $user = null;
+    
+        if (count($results) > 0) {
+          $user = $results;
+        }
+      }
+
+
 }
  function insert_user(array $user)
     {
