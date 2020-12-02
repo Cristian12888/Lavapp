@@ -16,12 +16,12 @@
                 <img src="../vista/img/foto-divertida-perro-maquillado-150x150.jpg">
             </div>
             <div class="text">
-                <input type="text" name="" id="name" required>
+                <input type="text" name="email"  required>
                 <span class="barra"></span>
-                <label for="">Usuario</label>
+                <label for="">Correo</label>
             </div>
             <div class="text">
-                <input type="text" name="" id="name" required>
+                <input type="text" name="password" required>
                 <span class="barra"></span>
                 <label for="">Contraseña</label>
             </div>

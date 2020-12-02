@@ -1,3 +1,5 @@
+<?php  include 'header.php' ?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +9,8 @@
 <body>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>"  method="POST">
         <div class="form">
-    <title>Login</title>
-            <h1>Lavapp</h1><br>
+    <title>WashMachine</title>
+            <h1>WashMachine</h1><br>
             <div class="img">
                <!-- <img src="../vista/img/foto-divertida-perro-maquillado-150x150.jpg">-->
             </div>
