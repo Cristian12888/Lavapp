@@ -5,10 +5,10 @@ require 'header.php';
     <div class="contenedor">
         <div class="chooser">
             <div class="choose_user">
-                <h1>Usuario</h1>
+               <a href="./signup-us.php" > <h1>Usuario</h1></a>
             </div>        
             <div class="choose_user">
-                <h1>Prestador de<br> servicio</h1>
+            <a href="./signup-ps.php" ><h1>Prestador de<br> servicio</h1></a>
             </div>
         </div>
         

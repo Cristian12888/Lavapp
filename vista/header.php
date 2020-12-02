@@ -6,4 +6,7 @@
     <title>WashMachine</title>
     <link rel="stylesheet" href="../vista/css/all.css">
     <link rel="stylesheet" href="../vista/css/Chooser_user.css">
+    <link rel="stylesheet" href="../vista/css/dashboard.css">
+
+    <link rel="stylesheet" href="../vista/css/index.css">
 </head>

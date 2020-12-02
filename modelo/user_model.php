@@ -1,10 +1,10 @@
 <?php
+
  require '../db/Conexion.php';
 
  
 function findUser()
 {
-session_start();
 
     if (isset($_SESSION['user_id'])) {
         $records = $conn->prepare('SELECT id, email, password FROM usuario WHERE id = :id');

@@ -1,8 +1,9 @@
 <?php
+session_start();
 
-if(isset($_SESSION))
+if(isset($_SESSION["userid"]))
 {
-    header("location: User_p.php");
+    header("location: ../vista/dashboard.php");
 }
 else
 {

@@ -14,7 +14,7 @@ if(isset($user_info))
   $ingreso=insert_user($user_info);
   if($ingreso==true)
   {
-    header("location: ../controlador/index.php");
+    header("location: ../index.php");
   }
 }
 

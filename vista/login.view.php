@@ -9,9 +9,9 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="../controlador/Ct_registro_ps.php" id="fom" method="POST">
+    <form action="../controlador/login.php" id="fom" method="POST">
         <div class="form">
-            <h1>Lavapp</h1><br>
+            <h1>WashMachine</h1><br>
             <div class="img">
                 <img src="../vista/img/foto-divertida-perro-maquillado-150x150.jpg">
             </div>
@@ -29,10 +29,9 @@
 
         <button type="submit">Iniciar sesion</button>
            <a href="./choose_user.php"><button type="button" >Crear cuenta</button></a> 
-           
-    
+               
         </div>
-       
+       <?php if(isset($_SESSION["message"])){ echo $_SESSION["message"];}?>
 
     </form>
 </body>

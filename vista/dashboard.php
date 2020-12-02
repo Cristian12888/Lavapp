@@ -23,10 +23,11 @@
 	<div class="cont-menu">
 		<nav>
             <img src="../vista/img/foto-divertida-perro-maquillado-150x150.jpg">
+			<a href="#"><?php session_start(); echo $_SESSION["userid"] ?></a>
 			<a href="#">Lavadero</a>
 			<a href="#">Favoritos</a>
 			<a href="#">Configuracion</a>
-			<a href="#">Salir</a>
+			<a href="../controlador/logout.php">Salir</a>
 			
 		</nav>
 		<label for="btn-menu">✖️</label>
