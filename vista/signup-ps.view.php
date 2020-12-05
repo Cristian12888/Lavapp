@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>"  method="POST">
+<form action="signup-ps.controlador.php"  method="POST">
         <div class="form">
             <div>
             <h1>WashMachine</h1>
@@ -19,7 +19,7 @@
                <!-- <img src="../vista/img/foto-divertida-perro-maquillado-150x150.jpg">-->
             </div>
             <div class="text">
-                <input type="text" name="" id="name" required>
+                <input type="text" name="nit" required>
                 <span class="barra"></span>
                 <label for="">Nit</label>
             </div>
