@@ -49,6 +49,7 @@
                 <label for="">Contraseña</label>
             </div>
             <button type="submit">Registrarse</button>
+            <?php echo $message; ?>
         </div>
     </form>
 </div>

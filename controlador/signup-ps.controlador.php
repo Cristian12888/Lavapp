@@ -20,7 +20,7 @@ if(isset($user_info))
   }
   else
   {
-      
+      $message="no se encontro el usuario";
   }
 }
 require "../vista/signup-ps.view.php";
