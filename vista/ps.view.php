@@ -17,9 +17,9 @@ require 'dashboard.php';
 				<label for="">Nombre - Apellido</label>
 				<label for=""></label>
 				<label for="">Correo</label>
-				<label for=""></label>
+				<label for=""><?php echo $usid; ?></label>
 				<label for="">Nit</label>
-				<label for=""></label>
+				<label for=""><?php echo $_SESSION["nit"]; ?></label>
 			  </div>
 			</div>
 		  <br>

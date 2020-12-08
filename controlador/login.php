@@ -4,22 +4,33 @@ require '../modelo/login_model.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
- $login=array('tabla'=>'usuario',
+ $login=array('tabla'=>$_POST["s_user"],
               "email"=>$_POST["email"],
               'password'=>$_POST['password']
 );
 
 $rs_login= login($login);
-
-if($rs_login!=null)
+if($login["tabla"]=="usuario")
 {
-  $_SESSION["userid"]=$rs_login["email"];
-  header("location: user_p.php");
- 
+  if($rs_login!=null)
+  {
+    $_SESSION["userid"]=$rs_login["email"];
+    header("location: user_p.php");
+  
+  }
 }
-else{
-  $_SESSION["message"]= 'no se encontro el usuario';
+if($login["tabla"]=="usuario_ps")
+{
+  if($rs_login!=null)
+  {
+    $_SESSION["userid"]=$rs_login["email"];
+    $_SESSION["nit"]=$rs_login["nit"];
+    header("location: ps_p.php");
+  
+  }
 }
 }
 require "../vista/login.view.php";
+
+
 ?>

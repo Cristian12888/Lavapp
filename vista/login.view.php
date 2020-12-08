@@ -26,9 +26,9 @@
                 <label for="">Contraseña</label>
             </div>
             <div class="text">
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" name="s_user" aria-label="Default select example">
             <option value="usuario">Usuario</option>
-            <option value="usuario_Ps">Prestador De Servicio</option>
+            <option value="usuario_ps">Prestador De Servicio</option>
             </select>
             </div>
             

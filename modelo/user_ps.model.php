@@ -31,11 +31,7 @@ function insert_user_ps(array $user)
           }
     }
 
-    }
-
-
-
-
+    
 
 
 ?>
