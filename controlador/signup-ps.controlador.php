@@ -3,6 +3,7 @@ require '../modelo/user_ps.model.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
+  
   $user_info=array('nit'=>$_POST['nit'],
                     'nombre'=>$_POST['nombre'],
                     'apellido'=>$_POST['apellido'],
@@ -17,10 +18,6 @@ if(isset($user_info))
   if($ingreso==true)
   {
     header("location: ../index.php");
-  }
-  else
-  {
-      $message="no se encontro el usuario";
   }
 }
 require "../vista/signup-ps.view.php";
