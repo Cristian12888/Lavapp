@@ -13,7 +13,6 @@
 			<label for="btn-menu">☰</label>
 		</div>
 			<div class="logo">
-				<h1>hola</h1>
 			</div>
 		</div>
 	</header>
