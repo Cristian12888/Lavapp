@@ -21,7 +21,7 @@
                 <label for="">Correo</label>
             </div>
             <div class="text">
-                <input type="text" name="password" required>
+                <input type="password" name="password" required>
                 <span class="barra"></span>
                 <label for="">Contraseña</label>
             </div>
