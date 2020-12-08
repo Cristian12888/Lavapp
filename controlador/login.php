@@ -14,7 +14,7 @@ $rs_login= login($login);
 if($rs_login!=null)
 {
   $_SESSION["userid"]=$rs_login["email"];
-  header("location: index.php");
+  header("location: user_p.php");
  
 }
 else{

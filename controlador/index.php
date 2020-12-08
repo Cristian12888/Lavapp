@@ -3,7 +3,7 @@ session_start();
 
 if(isset($_SESSION["userid"]))
 {
-    header("location: ../vista/dashboard.php");
+    header("location: ./vista/user.view.php");
 }
 else
 {
