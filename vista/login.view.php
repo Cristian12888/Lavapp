@@ -25,6 +25,12 @@
                 <span class="barra"></span>
                 <label for="">Contraseña</label>
             </div>
+            <div class="text">
+            <select class="form-select" aria-label="Default select example">
+            <option value="usuario">Usuario</option>
+            <option value="usuario_Ps">Prestador De Servicio</option>
+            </select>
+            </div>
             
 
         <button type="submit">Iniciar sesion</button>

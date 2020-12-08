@@ -11,15 +11,15 @@ require 'dashboard.php';
 				<br>
 				<br>
 				<br>			
-				<button type="button" class="btn btn-outline-light col-sm-8">Light</button>
+				<button type="button" class="btn btn-light col-sm-8">Light</button>
 			  </div>
 			  <div class="col">
 				<label for="">Nombre - Apellido</label>
-				<input type="text" class="form-control" name="nomapell" readonly="">
+				<label for=""></label>
 				<label for="">Correo</label>
-				<input type="text" class="form-control" name="correo" readonly="">
+				<label for=""></label>
 				<label for="">Nit</label>
-				<input type="text" class="form-control" name="nit" readonly="">
+				<label for=""></label>
 			  </div>
 			</div>
 		  <br>
