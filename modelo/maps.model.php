@@ -1,5 +1,6 @@
 <?php
- 
+
+
   // Archivo de Conexión a la Base de Datos 
   include '../db/Conexion.php';
  $con= conexion();
