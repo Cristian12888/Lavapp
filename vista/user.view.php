@@ -15,6 +15,7 @@
         width:70%;
         position:absolute;
         margin:2% 4% 0 20%;
+        border-radius: 10px;
         
       }
       /* Optional: Makes the sample page fill the window. */
@@ -46,6 +47,18 @@
           zoom: 15
         });
         var infoWindow = new google.maps.InfoWindow;
+        const medallo={lat: 6.25184,lng:  -75.56359}
+        const medallo2={lat: 6.26000,lng:  -75.56359}
+        const marker = new google.maps.Marker({
+          position: medallo,
+          map: map,
+        });
+        const marker2= new google.maps.Marker({
+          position:medallo2,
+          map: map,
+        });
+        
+        
           
         }      
     </script>
