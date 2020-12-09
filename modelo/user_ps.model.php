@@ -8,7 +8,7 @@ function insert_user_ps(array $user)
             if(!empty($user['nombre']) && !empty($user['apellido']) && !empty($user['email']) && !empty($user['telefono']) && !empty($user['password']))
           {
           
-              $SQL="INSERT INTO usuario_ps (Nombre,Apellido,Correo,Nit,Telefono,Password) VALUES (:nombre, :apellido, :email,:nit,:telefono, :password)";
+              $SQL="INSERT INTO usuario_ps (nombre,apellido,correo,nit,telefono,Password) VALUES (:nombre, :apellido, :email,:nit,:telefono, :password)";
               $ps=$db->prepare($SQL);
               $ps->bindParam(':nombre', $user['nombre']);
               $ps->bindParam(':apellido', $user['apellido']);

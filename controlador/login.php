@@ -25,8 +25,9 @@ if($login["tabla"]=="usuario_ps")
   {
     $_SESSION["userid"]=$rs_login["email"];
     $_SESSION["nit"]=$rs_login["nit"];
-    header("location: ps_p.php");
-  
+    $_SESSION["nombre"]=$rs_login["nombre"];
+    $_SESSION["apellido"]=$rs_login["apellido"];
+    header("location: ps_con.php");
   }
 }
 }

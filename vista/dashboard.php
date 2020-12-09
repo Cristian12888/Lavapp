@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../vista/css/dashboard.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<title>Document</title>
 </head>
 <body>
@@ -27,7 +28,6 @@
 			<a href="#">Favoritos</a>
 			<a href="#">Configuracion</a>
 			<a href="../controlador/logout.php">Salir</a>
-			
 		</nav>
 		<label for="btn-menu">✖️</label>
 	</div>
