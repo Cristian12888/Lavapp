@@ -23,7 +23,7 @@
 	<div class="cont-menu">
 		<nav>
             <img src="../vista/img/foto-divertida-perro-maquillado-150x150.jpg">
-			<a href="#"><?session_start(); php echo $_SESSION["userid"] ?></a>
+			<a href="#"><?php session_start(); echo $_SESSION["userid"] ?></a>
 			<a href="#">Lavadero</a>
 			<a href="#">Favoritos</a>
 			<a href="#">Configuracion</a>
